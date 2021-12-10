@@ -15,9 +15,9 @@ namespace ServiceReservasi
 
         // TODO: Add your service operations here
         [OperationContract]
-        string pemesanan(string IDPemesanan, string NamaCustomer, string NoTelpon, int JumlahPemesanan, string IDLokasi); // Method // Proses input data
+        string pemesanan(string IDPemesanan, string NamaCustomer, string NoTelepon, int JumlahPemesanan, string IDLokasi); // Method // Proses input data
         [OperationContract]
-        string editPemesanan(string IDPemesanan, string NamaCustomer);
+        string editPemesanan(string IDPemesanan, string NamaCustomer, string No_telepon);
         [OperationContract]
         string deletePemesanan(string IDPemesanan);
         [OperationContract]
@@ -60,11 +60,11 @@ namespace ServiceReservasi
         [DataMember]
         public string NamaCustomer { get; set; }
         [DataMember]
-        public string NoTelpon { get; set; }
+        public string NoTelepon { get; set; }
         [DataMember]
         public int JumlahPemesanan { get; set; }
         [DataMember]
-        public string IDLokasi { get; set; }
+        public string Lokasi { get; set; }
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
